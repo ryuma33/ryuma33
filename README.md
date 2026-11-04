@@ -1,5 +1,5 @@
 # 💫 About Me:
-👋 Hi, I'm Althaf<br> 🎓 B.Tech AI&DS student at VJCET<br> 🔭 Currently working on CYPHER<br> 🌱 Learning AI/ML, Python<br> 👯 Open to collaborating on open-source / web projects<br> 💬 Ask me about Python, Web Dev, Machine Learning<br> 📫 Reach me at **[althaf.nezam17@gmail.com]
+👋 Hi, I'm Althaf<br> 🎓 B.Tech AI&DS student at VJCET<br> 🔭 Currently working on CYPHER<br> 🌱 Learning AI/ML, Python<br> 👯 Open to collaborating on open-source / web projects<br> 💬 Ask me about Python, Web Dev, Machine Learning<br>
 
 
 ## 🌐 Socials:
