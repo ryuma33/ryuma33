@@ -16,6 +16,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.request
 from html import escape
 
@@ -32,13 +33,18 @@ LANG_COLORS = {"Python": "#3572A5", "HTML": "#e34c26", "JavaScript": "#f1e05a", 
 
 
 # ---------------------------------------------------------------- fetching data
-def get(url, data=None):
+def get(url, data=None, auth=True):
     headers = {"User-Agent": "profile-cards", "Accept": "application/vnd.github+json"}
-    if TOKEN and "api.github.com" in url:
+    if auth and TOKEN and "api.github.com" in url:
         headers["Authorization"] = f"Bearer {TOKEN}"
     req = urllib.request.Request(url, data=data, headers=headers)
-    with urllib.request.urlopen(req, timeout=30) as r:
-        body = r.read().decode("utf-8")
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            body = r.read().decode("utf-8")
+    except urllib.error.HTTPError as e:
+        if auth and TOKEN and e.code in (401, 403) and data is None:
+            return get(url, data, auth=False)  # token refused: public data works without it
+        raise
     return json.loads(body) if "api.github.com" in url else body
 
 
@@ -183,18 +189,29 @@ def streak_card(days):
     return card(495, 195, "GitHub streak", body)
 
 
+def attempt(what, fn, default):
+    """Run one data-gathering step; on error, print a warning and carry on."""
+    try:
+        return fn()
+    except Exception as e:
+        print(f"::warning::{what} failed: {type(e).__name__}: {e}")
+        return default
+
+
 def main():
     os.makedirs(OUT, exist_ok=True)
-    days = contribution_days()
-    stars, nrepos, langs = repo_stats()
+    days = attempt("contributions", contribution_days, {})
+    stars, nrepos, langs = attempt("repositories", repo_stats, (0, 0, {}))
     prs = search_count(f"author:{USER}+type:pr")
     issues = search_count(f"author:{USER}+type:issue")
-    files = {"stats.svg": stats_card(stars, sum(days.values()), prs, issues, nrepos),
-             "top-langs.svg": langs_card(langs), "streak.svg": streak_card(days)}
-    for name, svg in files.items():
-        with open(os.path.join(OUT, name), "w", encoding="utf-8") as f:
-            f.write(svg)
-        print("saved", name)
+    makers = {"stats.svg": lambda: stats_card(stars, sum(days.values()), prs, issues, nrepos),
+              "top-langs.svg": lambda: langs_card(langs), "streak.svg": lambda: streak_card(days)}
+    for name, make in makers.items():
+        svg = attempt(f"drawing {name}", make, None)
+        if svg:
+            with open(os.path.join(OUT, name), "w", encoding="utf-8") as f:
+                f.write(svg)
+            print("saved", name)
 
 
 if __name__ == "__main__":
