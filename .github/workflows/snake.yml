@@ -1,7 +1,7 @@
 # Makes the pictures used in README.md and saves them to a branch called "output":
 #   - the "snake eating my contributions" animation
-#   - copies of the stats, top-languages and streak cards, so the profile loads them
-#     instantly from GitHub instead of waiting on slow free services
+#   - the stats, top-languages and streak cards, drawn by .github/scripts/make_cards.py
+#     from GitHub data (free card services block GitHub's servers)
 # Runs every day, on every push to main, and when started by hand (Actions tab -> Run workflow).
 name: Generate profile images
 
@@ -20,6 +20,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - uses: actions/checkout@v4   # gets .github/scripts/make_cards.py (must run first: it clears the folder)
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -27,20 +29,11 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#ff2bd6&color_dots=#161b22,#3b2a5e,#6b3fa0,#a64fd6,#ff2bd6
 
-      - name: Download stats cards
-        run: |
-          U=${{ github.repository_owner }}
-          get() {  # retry slow services up to 5 times; never fail the whole job
-            for i in 1 2 3 4 5; do
-              curl -sfL --max-time 60 "$2" -o "dist/$1.tmp" && grep -q "<svg" "dist/$1.tmp" && mv "dist/$1.tmp" "dist/$1" && echo "saved $1" && return 0
-              sleep 10
-            done
-            echo "::warning::could not download $1 this time"
-          }
-          get streak.svg     "https://streak-stats.demolab.com/?user=$U&theme=radical&hide_border=true"
-          get stats.svg      "https://github-readme-stats.shion.dev/api?username=$U&theme=radical&hide_border=true&show_icons=true"
-          get top-langs.svg  "https://github-readme-stats.shion.dev/api/top-langs/?username=$U&theme=radical&hide_border=true&layout=compact"
-          rm -f dist/*.tmp
+      - name: Draw stats cards
+        run: python .github/scripts/make_cards.py dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CARD_USER: ${{ github.repository_owner }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
