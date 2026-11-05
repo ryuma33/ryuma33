@@ -32,14 +32,18 @@
 
 ## 🌐 Connect With Me
 
-[![Website](https://img.shields.io/badge/Website-ryuma33.github.io-8a2be2?logo=firefoxbrowser&logoColor=white)](https://ryuma33.github.io)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/althaf-nezam-rawther-305689436/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/ryuma33)
-[![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://instagram.com/althaf6__)
-[![Discord](https://img.shields.io/badge/Discord-ryuma33-5865F2?logo=discord&logoColor=white)](https://discord.com/app "Add me on Discord: ryuma33")
-[![Reddit](https://img.shields.io/badge/Reddit-FF4500?logo=reddit&logoColor=white)](https://reddit.com/user/ryuma3333)
-[![X](https://img.shields.io/badge/X-000000?logo=x&logoColor=white)](https://x.com/AlthafNezam)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:althaf.nezam17@gmail.com)
+<p>
+  <a href="https://ryuma33.github.io" title="Website (ryuma33.github.io)"><img src="assets/icons/website.svg" width="48" height="48" alt="Website (ryuma33.github.io)" /></a>
+  <a href="https://linkedin.com/in/althaf-nezam-rawther-305689436/" title="LinkedIn"><img src="https://skillicons.dev/icons?i=linkedin" width="48" height="48" alt="LinkedIn" /></a>
+  <a href="https://github.com/ryuma33" title="GitHub"><img src="https://skillicons.dev/icons?i=github" width="48" height="48" alt="GitHub" /></a>
+  <a href="https://instagram.com/althaf6__" title="Instagram"><img src="https://skillicons.dev/icons?i=instagram" width="48" height="48" alt="Instagram" /></a>
+  <a href="https://discord.com/app" title="Discord: ryuma33"><img src="https://skillicons.dev/icons?i=discord" width="48" height="48" alt="Discord: ryuma33" /></a>
+  <a href="https://reddit.com/user/ryuma3333" title="Reddit"><img src="assets/icons/reddit.svg" width="48" height="48" alt="Reddit" /></a>
+  <a href="https://x.com/AlthafNezam" title="X"><img src="assets/icons/x.svg" width="48" height="48" alt="X" /></a>
+  <a href="mailto:althaf.nezam17@gmail.com" title="Gmail"><img src="https://skillicons.dev/icons?i=gmail" width="48" height="48" alt="Gmail" /></a>
+</p>
+
+💬 Discord: **ryuma33**
 
 ---
 
