@@ -36,7 +36,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/althaf-nezam-rawther-305689436/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/ryuma33)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://instagram.com/althaf6__)
-[![Discord](https://img.shields.io/badge/Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/ryuma33)
+[![Discord](https://img.shields.io/badge/Discord-ryuma33-5865F2?logo=discord&logoColor=white)](https://discord.com/app "Add me on Discord: ryuma33")
 [![Reddit](https://img.shields.io/badge/Reddit-FF4500?logo=reddit&logoColor=white)](https://reddit.com/user/ryuma3333)
 [![X](https://img.shields.io/badge/X-000000?logo=x&logoColor=white)](https://x.com/AlthafNezam)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:althaf.nezam17@gmail.com)
