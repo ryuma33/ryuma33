@@ -18,7 +18,7 @@
 
 <img align="right" width="220" src="assets/robot.gif" alt="Pixel-art robot typing on a laptop" />
 
-- 🎯 Building **CYPHER**, a computer-vision system that detects weapons, on a dataset I collected and labelled myself
+- 🛡️ Building **CYPHER**, an AI security surveillance system for IP cameras: weapon, loitering, abandoned-object, fall and camera-tamper detection
 - 🤖 Making autonomous robots with **ESP32** and **Arduino**
 - 🅿️ Rebuilding **PARK4U**, our camera-based parking app, into a real product
 - ✨ **Vibe coding**: experimenting with AI coding tools like **Claude**, **ChatGPT**, **Gemini** and **Cursor**
@@ -115,9 +115,9 @@
 
 ## 🚀 Featured Projects
 
-### 🎯 CYPHER: Weapon Detection
-An AI object-detection system that spots weapons in images and video, trained on a custom dataset I collected and labelled myself. Built to help security systems flag threats faster.<br>
-**Tech:** Python, Computer Vision, Deep Learning
+### 🛡️ [CYPHER: AI Security Surveillance System](https://github.com/ryuma33/CYPHER)
+An AI-powered, multi-threat surveillance system for IP cameras. It detects **weapons**, **loitering**, **abandoned objects**, **falls** and **camera tampering** in real time, and re-identifies the same person across different cameras. Alerts show up on a live dashboard. The weapon model is trained on a dataset I collected and labelled myself.<br>
+**Tech:** Python, YOLOv8, ByteTrack, OSNet (person re-ID), OpenCV, Streamlit
 
 ### 🔥 [Fire-Fighting Robot](https://github.com/ryuma33/Fire-Fighting-Robot)
 An autonomous ESP32 robot that finds fires with three flame sensors, drives toward them and puts them out with a pump and a servo-swept nozzle.<br>
@@ -136,11 +136,11 @@ Rates how strong a password is and explains why: entropy, common passwords, leet
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.shion.dev/api?username=ryuma33&theme=radical&hide_border=true&show_icons=true" alt="GitHub stats" height="165" />
-  <img src="https://github-readme-stats.shion.dev/api/top-langs/?username=ryuma33&theme=radical&hide_border=true&layout=compact" alt="Top languages" height="165" />
+  <img src="https://raw.githubusercontent.com/ryuma33/ryuma33/output/stats.svg" alt="GitHub stats" height="165" />
+  <img src="https://raw.githubusercontent.com/ryuma33/ryuma33/output/top-langs.svg" alt="Top languages" height="165" />
 </p>
 <p align="center">
-  <img src="https://streak-stats.demolab.com/?user=ryuma33&theme=radical&hide_border=true" alt="GitHub streak" />
+  <img src="https://raw.githubusercontent.com/ryuma33/ryuma33/output/streak.svg" alt="GitHub streak" />
 </p>
 <p align="center">
   <picture>
