@@ -1,4 +1,4 @@
-# 👋 Hey there! I'm Althaf Nezam Rawther
+# 👋 Hey there! I'm Althaf Nezam
 
 [![Profile Views](https://komarev.com/ghpvc/?username=ryuma33&label=Profile%20Views&color=8a2be2&style=flat)](https://github.com/ryuma33)
 
