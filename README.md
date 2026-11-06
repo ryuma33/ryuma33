@@ -5,7 +5,7 @@
 ![Pixel-art neon city at night with an ALTHAF sign and rain](assets/banner.gif)
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=FF2BD6&center=true&vCenter=true&width=620&lines=AI+%26+Data+Science+student+%40+VJCET;Vibe+coder+%E2%9C%A8+building+with+AI+tools;Building+robots+that+sense%2C+think+%26+act;Computer+Vision+%E2%80%A2+ESP32+%E2%80%A2+Python" alt="Typing animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=FF2BD6&center=true&vCenter=true&width=620&lines=AI+%26+Data+Science+student+%40+VJCET;Vibe+coder+%E2%9C%A8+building+with+AI+tools;Building+robots+that+sense%2C+think+%26+act;Computer+Vision+%E2%80%A2+AI+%E2%80%A2+Python" alt="Typing animation" />
 </p>
 
 > - 🎓 B.Tech AI & Data Science student @ **VJCET** | Robotics & AI builder
